@@ -1,0 +1,27 @@
+$accentColor1: #b5863e;
+$accentColor2: #a76bb2;
+$accentColor3: #749d6f;
+
+.landingPage-container{
+    margin: 25px 50px 50px 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.lp-searchArea-container{
+    display: inherit;
+}
+
+.lp-searchArea-Btn {
+    font-size: 32px;
+    color: $accentColor1;
+}
+
+#lp-searchArea-searchInput {
+    font-size: 32px;
+    background-color: $accentColor2;
+}
+
+.lp-searchResult-container {
+    color: $accentColor1;
+}

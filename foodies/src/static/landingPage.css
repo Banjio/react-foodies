@@ -1,0 +1,28 @@
+.landingPage-container {
+  margin: 25px 50px 50px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.lp-searchArea-container {
+  display: inherit;
+}
+
+.lp-searchArea-Btn {
+  font-size: 32px;
+  color: #b5863e;
+}
+
+#lp-searchArea-searchInput {
+  font-size: 32px;
+  background-color: #a76bb2;
+}
+
+.lp-searchResult-container {
+  color: #b5863e;
+}
+/*# sourceMappingURL=landingPage.css.map */
