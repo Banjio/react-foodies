@@ -2,21 +2,21 @@ import logo from './logo.svg';
 import './App.css';
 import './static/landingPage.css'
 
-const exampleData = 
-{
-  'Frosta Bordelais': {
+const products = 
+[
+  {'name': 'Frosta Bordelais',
     metaInfo: {},
     price: 4.19,
     priceUnit: "EUR",
     nutriScore: "B"
    }, 
-  'Frosta Curry': {
+   {'name': 'Frosta Curry',
      metaInfo: {},
      price: 1.99,
      priceUnit: "EUR",
      nutriScore: "D"
    }
-}
+  ]
 
 function SearchArea(){
   return(
@@ -28,9 +28,27 @@ function SearchArea(){
 }
 
 function SearchResult(){
+  const dictItems = products.map(product =>
+      <tr>
+        <td>{product.name}</td>
+        <td>{product.price}</td>
+        <td>{product.nutriScore}</td>
+      </tr>
+    );
   return(
     <div className="lp-searchResult-container">
-      <h1>Search Result</h1>
+      <h1><center>Search Result</center></h1>
+      <div className="flexBreak"></div>
+      <table>
+        <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Nutri Score</th>
+        </tr>
+        {dictItems}
+        </tbody>
+      </table>
     </div>
   )
 }
@@ -39,8 +57,7 @@ function LandingPage() {
   return(
     <div className="landingPage-container">
       <SearchArea/>
-      <br></br>
-      <br></br>
+      <div className="flexBreak"></div>
       <SearchResult/>
     </div>
   )

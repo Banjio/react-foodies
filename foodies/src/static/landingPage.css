@@ -1,3 +1,9 @@
+.flexBreak {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 0;
+}
+
 .landingPage-container {
   margin: 25px 50px 50px 25px;
   display: -webkit-box;
@@ -6,6 +12,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .lp-searchArea-container {
@@ -23,6 +31,25 @@
 }
 
 .lp-searchResult-container {
-  color: #b5863e;
+  color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+}
+
+table {
+  border: 2px solid #749d6f;
+  width: 800px;
+  height: 200px;
+}
+
+th {
+  border-bottom: 1px solid black;
+}
+
+td {
+  text-align: center;
 }
 /*# sourceMappingURL=landingPage.css.map */
