@@ -1,12 +1,31 @@
-.dtview-container {
+$accentColor1: #b5863e;
+$accentColor2: #a76bb2;
+$accentColor3: #749d6f;
+$standardColor: black;
+
+.dtview-container1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 
 }
 
+.dtview-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+}
+
+.dtview-backBtn { grid-area: 1 / 1 / 2 / 2; }
+.dtview-prodTitle { grid-area: 1 / 2 / 2 / 3; }
+.dtview-prodPic { grid-area: 2 / 1 / 3 / 3; }
+.dtView-prodGraph { grid-area: 3 / 1 / 4 / 3; } 
+
 h1 {
     align-items: center;
-    color: green;
+    color: $standardColor;
     display: grid;
 }
